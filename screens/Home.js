@@ -23,7 +23,7 @@ export default class HomeScreen extends Component {
   }
 
   getMovie = () => {
-    const url = "http://localhost:5000/get-movie";
+    const url = "https://8bdc649df02b.ngrok.io/get-movie";
     axios
       .get(url)
       .then(response => {
@@ -37,7 +37,7 @@ export default class HomeScreen extends Component {
   };
 
   likedMovie = () => {
-    const url = "http://localhost:5000/liked-movie";
+    const url = "https://8bdc649df02b.ngrok.io/liked-movie";
     axios
       .post(url)
       .then(response => {
@@ -49,7 +49,7 @@ export default class HomeScreen extends Component {
   };
 
   unlikedMovie = () => {
-    const url = "http://localhost:5000/unliked-movie";
+    const url = "https://8bdc649df02b.ngrok.io/unliked-movie";
     axios
       .post(url)
       .then(response => {
@@ -61,7 +61,7 @@ export default class HomeScreen extends Component {
   };
 
   notWatched = () => {
-    const url = "http://localhost:5000/did-not-watch";
+    const url = "https://8bdc649df02b.ngrok.io/did-not-watch";
     axios
       .post(url)
       .then(response => {
@@ -114,7 +114,7 @@ export default class HomeScreen extends Component {
                     count={10}
                     reviews={["", "", "", "", ""]}
                     defaultRating={rating}
-                    isDisabled={true}
+                    isDisabled={true} 
                     size={RFValue(25)}
                     starContainerStyle={{ marginTop: -30 }}
                   />
